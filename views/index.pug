@@ -3,16 +3,39 @@ head
   title ECG basics
   style
     include css/style.css
-.header Header
-.main-content Content
-.side-menu
-  .side-menu__top-button
-    button MB
-  .side-menu__navigation
-    button B1
-    button B2
-    button B3
-    button B4
-  .side-menu__top-button
-    button B1
-    button B2
+.main-container
+  .header
+    .header__search
+      input(type='text' name='search' placeholder='Search for videos, flashcards, and questions')
+      button
+    .header__nav
+      button.fi.fi-flashcards-o
+        .notification 73
+      button.fi.fi-schedule-nav.disabled
+      .header__separator
+      button.fi.fi-rep-clock
+        .notification 97
+      .header__separator
+      button.user
+        img(src='/images/user1.jpg')
+  .main-content Content
+.side-menu-container
+  .side-menu
+    .side-menu__top-button
+      button MB
+    .side-menu__navigation
+      ul
+        li
+          button.fi.fi-logo Library
+        li
+          button.fi.fi-calendar Step 1 Schedule
+        li
+          button.fi.fi-builder Quiz Builder
+        li
+          button.fi.fi-group Team Workspace
+    .side-menu__bottom-button
+      ul
+        li
+          button.fi.fi-play-expanded Add Tools
+        li
+          button.fi.fi-clinical-o Help

@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-	"build": "lessc less/app.less > views/css/style.css"
+    "build": "lessc less/app.less > views/css/style.css"
   },
   "author": "",
   "license": "ISC",

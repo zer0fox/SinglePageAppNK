@@ -1,0 +1,47 @@
+.side-menu-container {
+    height  : 100vh;
+    width   : 90px;
+    position: absolute;
+    top     : 0;
+
+    .side-menu {
+        height          : 100vh;
+        width           : 100%;
+        background-color: #1e6dcc;
+        text-align      : center;
+
+        button {
+            margin-top: 30px;
+        }
+
+        &__top-button {
+            background-color: #355988;
+
+            button {
+                margin-top: 0px;
+            }
+        }
+
+        &__bottom-button {
+            position: absolute;
+            bottom  : 0;
+            left    : 0;
+            right   : 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .fi {
+            color: white;
+
+            &:before {
+                color    : #95b7e6;
+                display  : block;
+                font-size: 50px;
+                padding-bottom: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.header {
+    display         : flex;
+    justify-content : space-between;
+    background-color: white;
+    border-bottom   : 1px solid #ececec;
+
+    .notification {
+        background-color: red;
+        color           : white;
+        border-radius   : 50%;
+        width           : 26px;
+        font-weight     : bold;
+        position        : absolute;
+        top             : -3px;
+        right           : -10px;
+        font-size       : 14px;
+        padding         : 2px;
+    }
+
+    &__search {
+        padding : 13px 15px;
+        position: relative;
+
+        input {
+            background-color: #f7f7f7;
+            padding         : 10px 40px 10px 7px;
+            border          : 1px solid #ebebeb;
+            border-radius   : 5px;
+            font-weight     : bold;
+            min-width       : 380px;
+
+            &::placeholder {
+                color: #757676;
+            }
+        }
+
+        button {
+            position           : absolute;
+            right              : 15px;
+            height             : 40px;
+            width              : 40px;
+            background-image   : url(/images/ui/magnifier.svg);
+            background-size    : 38%;
+            background-position: center;
+            background-repeat  : no-repeat;
+        }
+    }
+
+    &__nav {
+        padding: 13px 15px;
+
+        button {
+            height             : 40px;
+            width              : 40px;
+            display            : inline-block;
+            vertical-align     : top;
+            background-size    : 100%;
+            background-position: center;
+            background-repeat  : no-repeat;
+            margin             : 0 10px;
+            position           : relative;
+
+            &:before {
+                font-size: 30px;
+                color    : #236fcd;
+            }
+
+            &.disabled {
+                &:before {
+                    color: #cccccc;
+                }
+            }
+
+            &.user {
+                border-radius: 50%;
+                overflow     : hidden;
+
+                >img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__separator {
+        display         : inline-block;
+        vertical-align  : top;
+        width           : 2px;
+        margin          : 0 2px;
+        height          : 40px;
+        background-color: #ebebeb;
+    }
+}
