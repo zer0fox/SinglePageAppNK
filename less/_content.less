@@ -1,0 +1,71 @@
+.main-content {
+    padding: 60px 140px;
+
+    @media (max-width: 800px) {
+        padding: 30px 60px;
+    }
+
+    .page-header {
+        display         : flex;
+        background-color: white;
+        width           : 100%;
+        padding         : 20px 25px;
+        margin-bottom   : 30px;
+
+        >img {
+            width       : 55px;
+            margin-right: 20px;
+        }
+
+        h3 {
+            color      : #9a9a9a;
+            font-size  : 15px;
+            font-weight: normal;
+            font-style : italic;
+        }
+    }
+
+    .page-content {
+        display: flex;
+
+        &__video-container {
+            background-color: red; //TODO for test
+            margin-right    : 10px;
+            flex-grow       : 2;
+
+            .aspect-ratio-container {
+                padding-top: 56.25%;
+                position   : relative;
+            }
+
+            iframe {
+                position: absolute;
+                top     : 0;
+                left    : 0;
+                width   : 100%;
+                height  : 100%;
+            }
+        }
+
+        &__scroll-list {
+            margin-left: 10px;
+            flex-grow  : 1;
+
+            h3 {
+                border-bottom: 1px solid #e7e7e7;
+            }
+
+            >* {
+                margin-bottom: 20px;
+            }
+
+            &--memory-anchors {
+                background-color: white;
+            }
+
+            &--up-next {
+                background-color: white;
+            }
+        }
+    }
+}
