@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+*:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+body {
+  box-sizing: border-box;
+}
+button {
+  cursor: pointer;
+}
+html {
+  background-color: white;
+}
+body {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: black;
+}
+a,
+a:focus {
+  color: black;
+  text-decoration: none;
+}
+a.active,
+a:focus.active {
+  color: black;
+}
+a:hover,
+a:active {
+  color: black;
+  text-decoration: none;
+}
