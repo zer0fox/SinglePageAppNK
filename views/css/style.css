@@ -292,9 +292,8 @@ a:active {
   display: flex;
 }
 .main-content .page-content__video-container {
-  background-color: red;
   margin-right: 10px;
-  flex-grow: 2;
+  flex-grow: 3;
 }
 .main-content .page-content__video-container .aspect-ratio-container {
   padding-top: 56.25%;
@@ -316,6 +315,7 @@ a:active {
 }
 .main-content .page-content__scroll-list > * {
   margin-bottom: 20px;
+  padding: 15px;
 }
 .main-content .page-content__scroll-list--memory-anchors {
   background-color: white;
