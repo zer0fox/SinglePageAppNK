@@ -263,6 +263,7 @@ a:active {
   width: 90px;
   position: absolute;
   top: 0;
+  overflow: hidden;
 }
 .side-menu-container .side-menu {
   height: 100vh;
@@ -270,14 +271,34 @@ a:active {
   background-color: #1e6dcc;
   text-align: center;
 }
+.side-menu-container .side-menu__shadow {
+  box-shadow: -3px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: -90px;
+}
 .side-menu-container .side-menu button {
   margin-top: 30px;
 }
 .side-menu-container .side-menu__top-button {
   background-color: #355988;
+  height: 66px;
+  padding-top: 14px;
 }
 .side-menu-container .side-menu__top-button button {
   margin-top: 0px;
+  height: 100%;
+  border-top: 4px solid #738bac;
+  border-bottom: 4px solid #738bac;
+  height: 23px;
+}
+.side-menu-container .side-menu__top-button button:before {
+  content: "";
+  display: block;
+  width: 30px;
+  border-bottom: 4px solid #738bac;
 }
 .side-menu-container .side-menu__bottom-button {
   position: absolute;
