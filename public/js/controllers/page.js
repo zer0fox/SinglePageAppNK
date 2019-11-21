@@ -1,6 +1,6 @@
-const PageViewModel = function(first, last) {
-    this.pageTitle = ko.observable(pageModel.pageTitle);
+const PageViewModel = function(model) {
+    this.pageTitle = ko.observable(model.pageTitle);
     //this.lastName = ko.observable(last);
 };
 
-ko.applyBindings(new PageViewModel());
+ko.applyBindings(new PageViewModel(new PageModel()));
