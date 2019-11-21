@@ -1,6 +1,6 @@
-const ViewModel = function(first, last) {
+const PageViewModel = function(first, last) {
     this.pageTitle = ko.observable("ECG basics");
     this.lastName = ko.observable(last);
 };
 
-ko.applyBindings(new ViewModel());
+ko.applyBindings(new PageViewModel());
