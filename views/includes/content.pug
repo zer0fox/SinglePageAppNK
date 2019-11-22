@@ -2,7 +2,9 @@
   .page-header
     img(src='images/robot.png')
     .breadcrumbs
-      h3 Cardiovascular &gt; Physiology: Cardiovascular Physiology &gt; Electrocardiography
+      h3(data-bind='foreach: breadcrumb')
+        span(data-bind='text: $index() != 0 ? " > " : ""')
+        a(data-bind='text: name, attr: {href: url}')
       h2(data-bind='text: pageTitle')
   .page-content
     .page-content__video-container 
@@ -13,3 +15,11 @@
         h3 Up Next
       .page-content__scroll-list--memory-anchors
         h3 Memory Anchors
+        .link-item(data-bind='foreach: memoryAnchorsList')
+          a(data-bind='attr: {href: url}')
+            img(data-bind='attr: {src: "images/"+img}')
+            .info
+              .title(data-bind='text: title')
+              span
+                img(data-bind='attr: {src: $parent.getSourceIcon(source)}')
+                span.source(data-bind='text: source')

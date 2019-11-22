@@ -283,17 +283,26 @@ a:active {
   margin-right: 20px;
 }
 .main-content .page-header h3 {
-  color: #9a9a9a;
   font-size: 15px;
   font-weight: normal;
   font-style: italic;
 }
-.main-content .page-content {
-  display: flex;
+.main-content .page-header h3 span {
+  color: #9a9a9a;
+}
+.main-content .page-header h3 a {
+  color: #9a9a9a;
+}
+.main-content .page-header h3 a:hover {
+  color: inherit;
+}
+.main-content .page-content > div {
+  display: inline-block;
+  vertical-align: top;
 }
 .main-content .page-content__video-container {
-  margin-right: 10px;
-  flex-grow: 3;
+  width: 70%;
+  padding-right: 20px;
 }
 .main-content .page-content__video-container .aspect-ratio-container {
   padding-top: 56.25%;
@@ -307,8 +316,7 @@ a:active {
   height: 100%;
 }
 .main-content .page-content__scroll-list {
-  margin-left: 10px;
-  flex-grow: 1;
+  width: 30%;
 }
 .main-content .page-content__scroll-list h3 {
   border-bottom: 1px solid #e7e7e7;
@@ -322,6 +330,39 @@ a:active {
 }
 .main-content .page-content__scroll-list--up-next {
   background-color: white;
+}
+.link-item {
+  padding: 15px 0px;
+}
+.link-item > a {
+  margin-bottom: 18px;
+  display: block;
+}
+.link-item > a > img {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 10px;
+  height: auto;
+  width: 40%;
+  max-width: 100%;
+}
+.link-item > a .info {
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+}
+.link-item > a .info > span > img {
+  display: inline-block;
+  height: 12px;
+  margin: 0 6px -1px 0;
+}
+.link-item > a .info .title {
+  font-size: 15px;
+  font-weight: bold;
+}
+.link-item > a .info .source {
+  font-size: 13px;
+  color: #9a9a9a;
 }
 .side-menu-container {
   height: 100vh;

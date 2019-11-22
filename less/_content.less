@@ -18,19 +18,33 @@
         }
 
         h3 {
-            color      : #9a9a9a;
             font-size  : 15px;
             font-weight: normal;
             font-style : italic;
+
+            span {
+                color: #9a9a9a;
+            }
+
+            a {
+                color: #9a9a9a;
+
+                &:hover {
+                    color: inherit;
+                }
+            }
         }
     }
 
     .page-content {
-        display: flex;
+        >div {
+            display       : inline-block;
+            vertical-align: top;
+        }
 
         &__video-container {
-            margin-right    : 10px;
-            flex-grow       : 3;
+            width        : 70%;
+            padding-right: 20px;
 
             .aspect-ratio-container {
                 padding-top: 56.25%;
@@ -47,8 +61,7 @@
         }
 
         &__scroll-list {
-            margin-left: 10px;
-            flex-grow  : 1;
+            width: 30%;
 
             h3 {
                 border-bottom: 1px solid #e7e7e7;
@@ -56,7 +69,7 @@
 
             >* {
                 margin-bottom: 20px;
-                padding: 15px;
+                padding      : 15px;
             }
 
             &--memory-anchors {
@@ -65,6 +78,49 @@
 
             &--up-next {
                 background-color: white;
+            }
+        }
+    }
+}
+
+.link-item {
+    padding: 15px 0px;
+    >a {
+        margin-bottom: 18px;
+        display: block;
+
+        >img {
+            display       : inline-block;
+            vertical-align: top;
+            width         : 40%;
+            padding-right : 10px;
+            height        : auto;
+            width         : 40%;
+            max-width     : 100%;
+        }
+
+        .info {
+            display       : inline-block;
+            vertical-align: top;
+            width         : 60%;
+
+            >span {
+                >img {
+                    display: inline-block;
+
+                    height: 12px;
+                    margin: 0 6px -1px 0;
+                }
+            }
+
+            .title {
+                font-size  : 15px;
+                font-weight: bold;
+            }
+
+            .source {
+                font-size: 13px;
+                color    : #9a9a9a;
             }
         }
     }
