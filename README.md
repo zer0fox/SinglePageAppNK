@@ -1,5 +1,10 @@
 # SinglePageAppNK
-To build css
-- $ npm run build 
 To Test
-- $ node app.js
+```
+$ npm install
+$ node app.js
+```
+To build css
+```
+$ npm run build 
+```
