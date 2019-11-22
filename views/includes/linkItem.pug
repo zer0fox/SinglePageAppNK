@@ -1,0 +1,7 @@
+a(data-bind='attr: {href: url}')
+    img(data-bind='attr: {src: "images/"+img}')
+    .info
+        .title(data-bind='text: title')
+        span
+            img(data-bind='attr: {src: $parent.getSourceIcon(source)}')
+            span.source(data-bind='text: source')

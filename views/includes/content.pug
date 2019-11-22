@@ -7,19 +7,23 @@
         a(data-bind='text: name, attr: {href: url}')
       h2(data-bind='text: pageTitle')
   .page-content
-    .page-content__video-container 
+    .page-content__video-container
       .aspect-ratio-container
         iframe(src='https://www.youtube.com/embed/xIZQRjkwV9Q' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+      button.add-quiz(data-bind='click: click') Add to Quiz Queue
+        .card-data
+          .flashcards
+            span(data-bind='text: flashcards')
+            |  FLASHCARDS
+          .questions
+            span(data-bind='text: questions')
+            |  QUESTIONS
     .page-content__scroll-list
       .page-content__scroll-list--up-next 
         h3 Up Next
+        .link-item.up-next(data-bind='foreach: upNextList')
+          include linkItem.pug
       .page-content__scroll-list--memory-anchors
         h3 Memory Anchors
         .link-item(data-bind='foreach: memoryAnchorsList')
-          a(data-bind='attr: {href: url}')
-            img(data-bind='attr: {src: "images/"+img}')
-            .info
-              .title(data-bind='text: title')
-              span
-                img(data-bind='attr: {src: $parent.getSourceIcon(source)}')
-                span.source(data-bind='text: source')
+          include linkItem.pug

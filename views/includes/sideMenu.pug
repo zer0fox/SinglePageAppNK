@@ -1,21 +1,21 @@
 .side-menu-container
   .side-menu
     .side-menu__top-button
-      button
+      button(data-bind='click: click')
     .side-menu__navigation
       ul
         li
-          button.fi.fi-logo Library
+          button.fi.fi-logo(data-bind='click: click') Library
         li
-          button.fi.fi-calendar Step 1 Schedule
+          button.fi.fi-calendar(data-bind='click: click') Step 1 Schedule
         li
-          button.fi.fi-builder Quiz Builder
+          button.fi.fi-builder(data-bind='click: click') Quiz Builder
         li
-          button.fi.fi-group Team Workspace
+          button.fi.fi-group(data-bind='click: click') Team Workspace
     .side-menu__bottom-button
       ul
         li
-          button.fi.fi-play-expanded Add Tools
+          button.fi.fi-play-expanded(data-bind='click: click') Add Tools
         li
-          button.fi.fi-clinical-o Help
+          button.fi.fi-clinical-o(data-bind='click: click') Help
     .side-menu__shadow

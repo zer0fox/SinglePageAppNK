@@ -1,14 +1,16 @@
 .header
    .header__search
-     input(type='text' name='search' placeholder='Search for videos, flashcards, and questions')
-     button
+     input(type='text' name='search' placeholder='Search for videos, flashcards, and questions' data-bind='event: { "keyup": search }, value: searchValue')
+     button(data-bind='click: search')
    .header__nav
-     button.fi.fi-flashcards-o
+     button.fi.fi-flashcards-o(data-bind='click: click')
        .notification 73
-     button.fi.fi-schedule-nav.disabled
+     button.fi.fi-schedule-nav.disabled(data-bind='click: click')
      .header__separator
-     button.fi.fi-rep-clock
+     button.fi.fi-rep-clock(data-bind='click: click')
        .notification 97
      .header__separator
-     button.user
+     button.user(data-bind='click: click')
        img(src='/images/user1.jpg')
+.chat-icon(data-bind='click: click')
+.message(data-bind='text: message')

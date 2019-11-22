@@ -1,17 +1,19 @@
 const PageModel = function() {
     this.pageTitle = "ECG basics";
     this.breadcrumb = [
-        {url: "#", name: "Cardiovascular"},
-        {url: "#", name: "Physiology: Cardiovascular Physiology"},
-        {url: "#", name: "Electrocardiography"}
+        {url: "#Cardiovascular", name: "Cardiovascular"},
+        {url: "#Physiology", name: "Physiology: Cardiovascular Physiology"},
+        {url: "#Electrocardiography", name: "Electrocardiography"}
     ];
     this.upNextList = [
-        {url: "#", img: "next1.png", title: "Blood pressure, blood flow and resistance", source: "Osmosis"}
+        {url: "#n1", img: "next1.png", title: "Blood pressure, blood flow and resistance", source: "Osmosis"}
     ];
     this.memoryAnchorsList = [
-        {url: "#", img: "ma1.png", title: "Electrocardiography Handwritten", source: "Youtube"},
-        {url: "#", img: "ma2.png", title: "Electrocardiography Khan", source: "Youtube"},
-        {url: "#", img: "ma3.jpg", title: "12 Lead Contiguous Leads - Lateral Wall MI", source: "Picmonic"},
-        {url: "#", img: "ma4.jpg", title: "12 Lead Contiguous Leads - Lateral Wall MI", source: "Picmonic"}
+        {url: "#1", img: "ma1.png", title: "Electrocardiography Handwritten", source: "Youtube"},
+        {url: "#2", img: "ma2.png", title: "Electrocardiography Khan", source: "Youtube"},
+        {url: "#3", img: "ma3.jpg", title: "12 Lead Contiguous Leads - Lateral Wall MI", source: "Picmonic"},
+        {url: "#4", img: "ma4.jpg", title: "12 Lead Contiguous Leads - Lateral Wall MI", source: "Picmonic"}
     ];
+    this.flashcards = 26;
+    this.questions = 0;
 };

@@ -15,6 +15,7 @@
         >img {
             width       : 55px;
             margin-right: 20px;
+            height      : 100%;
         }
 
         h3 {
@@ -58,6 +59,57 @@
                 width   : 100%;
                 height  : 100%;
             }
+
+            .add-quiz {
+                background-color: #5cb85c;
+                border-radius   : 8px;
+                width           : 100%;
+                height          : 90px;
+                color           : white;
+                font-size       : 26px;
+
+                @media (max-width: 900px) {
+                    font-size: 19px;
+                }
+
+                margin-top : 10px;
+                position   : relative;
+                overflow   : hidden;
+
+                .card-data {
+                    color           : #c9dec8;
+                    position        : absolute;
+                    left            : 0;
+                    top             : 0;
+                    font-size       : 11px;
+                    background-color: #4a9349;
+                    height          : 100%;
+                    width           : 23%;
+                    text-align      : right;
+                    padding         : 0 10px;
+
+                    display        : flex;
+                    flex-direction : column;
+                    flex-wrap      : nowrap;
+                    justify-content: center;
+                    align-content  : center;
+                    align-items    : flex-end;
+
+                    >* {
+                        width  : 100%;
+                        padding: 3px 0px;
+                    }
+
+                    .flashcards {
+                        border-bottom: 1px solid #70a96d;
+                    }
+
+                    span {
+                        color    : white;
+                        font-size: 18px;
+                    }
+                }
+            }
         }
 
         &__scroll-list {
@@ -85,9 +137,10 @@
 
 .link-item {
     padding: 15px 0px;
+
     >a {
         margin-bottom: 18px;
-        display: block;
+        display      : block;
 
         >img {
             display       : inline-block;
@@ -122,6 +175,18 @@
                 font-size: 13px;
                 color    : #9a9a9a;
             }
+        }
+    }
+
+    &.up-next {
+        >a {
+            >img {
+                width: 50%;
+            }
+        }
+
+        .info {
+            width: 50%;
         }
     }
 }
